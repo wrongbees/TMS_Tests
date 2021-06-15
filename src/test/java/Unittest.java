@@ -41,13 +41,13 @@ public class Unittest {
 //        Assert.assertEquals(calculator.div(10,5), 2);
 //    }
 //
-    @Test
-    public void negativeDivTest2(){
-        final Calculator calculator = new Calculator();
-
-        Assert.assertThrows(java.lang.ArithmeticException.class, ()-> calculator.div(-2, 0));
-
-    }
+//    @Test
+//    public void negativeDivTest2(){
+//        final Calculator calculator = new Calculator();
+//
+//        Assert.assertThrows(java.lang.ArithmeticException.class, ()-> calculator.div(-2, 0));
+//
+//    }
 
     // a>0,b<0
     @Test
@@ -91,7 +91,7 @@ public class Unittest {
 
     // a>0, b=0
     @Test
-    public void negativeDivDoubleTest(){ //можно ли этот тест считать негативным?????
+    public void negativeDivDoubleTest(){                       //можно ли этот тест считать негативным?????
         Calculator calculator = new Calculator();
 
         Assert.assertEquals(calculator.divDouble(4, 0), Double.POSITIVE_INFINITY);
@@ -116,7 +116,7 @@ public class Unittest {
 
     // a<0
     @Test
-    public void negativeSqrlTest(){
+    public void negativeSqrlTest(){               //можно ли этот тест считать негативным?????
         Calculator calculator = new Calculator();
 
         Assert.assertEquals(Double.isNaN(calculator.sqr_t(-4)), true);
